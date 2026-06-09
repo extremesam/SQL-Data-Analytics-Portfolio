@@ -1,0 +1,301 @@
+EmployeeID,Gender,Age,Department,JobRole,Salary,YearsAtCompany,PerformanceRating,TrainingHours,Attrition
+1001,Male,33,HR,Recruiter,59341,3,3,28,No
+1002,Male,53,Operations,Ops Manager,103807,6,3,27,No
+1003,Male,31,Marketing,Content Strategist,103028,7,2,37,No
+1004,Female,47,IT,Systems Admin,111927,1,3,27,No
+1005,Female,55,Sales,Business Dev,72091,6,2,14,No
+1006,Male,54,Sales,Sales Rep,71885,5,2,30,Yes
+1007,Male,31,HR,HR Manager,78873,4,2,29,Yes
+1008,Male,35,Operations,Logistics Coordinator,99157,7,4,12,No
+1009,Male,30,Operations,Project Manager,105892,9,2,11,Yes
+1010,Male,48,IT,Data Analyst,118577,4,4,18,No
+1011,Female,33,IT,Software Engineer,122204,10,1,7,No
+1012,Female,47,HR,Payroll Specialist,90289,12,2,6,No
+1013,Female,50,Operations,Logistics Coordinator,104833,7,3,23,No
+1014,Female,35,Operations,Project Manager,94163,12,3,9,No
+1015,Female,26,HR,HR Generalist,98705,4,4,38,No
+1016,Female,40,Marketing,Content Strategist,92504,13,3,42,No
+1017,Female,34,Operations,Logistics Coordinator,74582,6,1,26,No
+1018,Male,32,Marketing,Brand Manager,113481,10,4,18,No
+1019,Female,22,Marketing,Content Strategist,58361,0,3,14,No
+1020,Male,38,Operations,Ops Manager,108974,13,3,42,No
+1021,Male,28,Finance,Financial Analyst,130505,4,4,30,No
+1022,Female,34,Marketing,Marketing Analyst,98728,12,4,20,No
+1023,Male,50,IT,DevOps Engineer,132280,12,2,20,Yes
+1024,Female,33,Sales,Business Dev,112070,7,4,38,No
+1025,Male,29,Sales,Business Dev,71978,5,3,4,No
+1026,Male,42,Sales,Sales Manager,86892,13,3,7,No
+1027,Male,57,IT,Data Analyst,114946,9,4,30,No
+1028,Female,32,Finance,Budget Analyst,138237,4,2,16,No
+1029,Female,56,IT,Software Engineer,85958,2,2,9,Yes
+1030,Female,32,Sales,Account Manager,109785,5,4,14,No
+1031,Female,49,IT,Systems Admin,94478,6,2,37,No
+1032,Female,28,IT,DevOps Engineer,118038,3,4,14,No
+1033,Female,45,Marketing,Brand Manager,103393,8,3,5,No
+1034,Male,40,IT,Systems Admin,116124,17,3,8,Yes
+1035,Female,43,IT,Software Engineer,113901,10,3,39,No
+1036,Female,47,Operations,Project Manager,83606,13,3,7,No
+1037,Male,58,Operations,Ops Manager,59816,3,4,16,No
+1038,Female,25,Marketing,Content Strategist,98121,2,2,6,No
+1039,Female,26,Marketing,Content Strategist,81228,1,2,9,Yes
+1040,Female,35,IT,Software Engineer,121903,11,3,15,Yes
+1041,Male,33,Operations,Logistics Coordinator,80335,10,3,36,No
+1042,Male,37,Marketing,Content Strategist,113904,7,3,37,No
+1043,Female,58,Finance,Controller,113186,10,4,5,No
+1044,Female,34,Sales,Sales Manager,72328,0,4,20,Yes
+1045,Male,45,Sales,Account Manager,87669,3,2,23,No
+1046,Male,23,Finance,Accountant,102531,1,2,28,Yes
+1047,Female,37,Marketing,Marketing Analyst,60848,4,2,18,No
+1048,Male,22,Finance,Financial Analyst,134959,1,2,27,No
+1049,Female,57,Sales,Sales Manager,111268,20,3,11,No
+1050,Male,36,Finance,Budget Analyst,138931,8,3,23,No
+1051,Female,50,Finance,Financial Analyst,149392,16,2,28,Yes
+1052,Female,50,IT,Systems Admin,126226,13,3,38,No
+1053,Female,47,Marketing,Marketing Analyst,102824,6,3,35,No
+1054,Male,25,Sales,Sales Rep,105827,4,4,16,No
+1055,Male,23,Operations,Logistics Coordinator,66959,0,3,10,Yes
+1056,Female,33,HR,HR Generalist,65995,2,3,23,No
+1057,Female,28,Operations,Logistics Coordinator,89286,1,3,14,No
+1058,Male,26,Operations,Ops Manager,80286,2,4,42,No
+1059,Female,50,Marketing,Brand Manager,107493,8,3,13,No
+1060,Male,44,Sales,Sales Rep,102115,19,3,13,No
+1061,Female,27,HR,Payroll Specialist,55281,0,3,9,Yes
+1062,Male,37,Marketing,Content Strategist,74405,9,4,23,No
+1063,Male,27,Sales,Sales Rep,84614,4,4,17,No
+1064,Male,50,HR,HR Generalist,107867,20,3,17,No
+1065,Female,57,IT,Data Analyst,128545,7,3,34,No
+1066,Male,55,Sales,Sales Manager,81580,17,3,26,No
+1067,Male,56,Sales,Sales Manager,96201,10,3,10,No
+1068,Female,49,Finance,Accountant,98876,6,3,34,No
+1069,Female,45,Marketing,SEO Specialist,95231,18,4,26,No
+1070,Male,22,Finance,Controller,113700,1,3,11,No
+1071,Female,48,Marketing,Content Strategist,103973,4,3,5,No
+1072,Male,37,Sales,Account Manager,94758,13,3,28,Yes
+1073,Male,53,Marketing,SEO Specialist,106321,7,3,23,No
+1074,Male,30,Sales,Sales Rep,94967,7,4,26,No
+1075,Male,26,Sales,Account Manager,62716,0,3,37,No
+1076,Male,35,Sales,Sales Rep,113892,11,2,31,Yes
+1077,Female,40,IT,Software Engineer,103307,19,2,6,No
+1078,Female,53,Sales,Sales Manager,103664,4,4,13,No
+1079,Female,58,IT,Data Analyst,135365,11,4,20,No
+1080,Male,46,Finance,Budget Analyst,146099,13,3,39,No
+1081,Female,36,Marketing,Marketing Analyst,75277,5,4,23,No
+1082,Female,32,HR,HR Generalist,62122,4,2,33,No
+1083,Female,42,Operations,Project Manager,103121,20,2,7,No
+1084,Male,51,Sales,Sales Rep,114115,6,4,31,No
+1085,Male,26,HR,Recruiter,89227,0,4,28,Yes
+1086,Female,36,Finance,Financial Analyst,112581,10,4,9,No
+1087,Female,50,HR,HR Manager,76303,10,3,31,No
+1088,Female,39,Operations,Project Manager,93694,5,3,12,No
+1089,Female,33,Marketing,SEO Specialist,107101,7,3,32,No
+1090,Female,24,Operations,Project Manager,65678,3,3,28,No
+1091,Male,34,Marketing,Marketing Analyst,96019,2,4,4,No
+1092,Male,30,Sales,Sales Manager,66058,3,4,7,No
+1093,Male,34,Operations,Project Manager,73117,3,4,15,No
+1094,Female,44,Sales,Account Manager,90296,10,3,10,No
+1095,Male,47,Marketing,Brand Manager,89516,9,4,34,No
+1096,Female,53,Finance,Controller,90967,0,3,9,No
+1097,Male,49,Marketing,Marketing Analyst,82815,11,3,41,No
+1098,Female,38,Finance,Accountant,144011,12,3,38,No
+1099,Male,27,Operations,Project Manager,67622,5,3,24,No
+1100,Male,30,Marketing,Brand Manager,104492,8,2,4,No
+1101,Female,39,Finance,Accountant,123423,15,3,5,No
+1102,Female,44,IT,Data Analyst,98535,15,3,26,No
+1103,Male,25,Finance,Budget Analyst,117510,1,4,9,No
+1104,Male,42,IT,DevOps Engineer,118226,15,4,18,No
+1105,Female,39,HR,Recruiter,94006,13,4,22,No
+1106,Female,51,Operations,Operations Analyst,100849,6,4,15,Yes
+1107,Female,22,Finance,Financial Analyst,98263,0,3,11,Yes
+1108,Female,45,IT,Data Analyst,120627,11,3,31,No
+1109,Female,42,Finance,Budget Analyst,106652,2,3,23,No
+1110,Male,24,Operations,Project Manager,97549,2,2,39,No
+1111,Male,32,Finance,Financial Analyst,109725,7,2,31,No
+1112,Female,27,Sales,Account Manager,83727,6,4,38,Yes
+1113,Female,39,Operations,Logistics Coordinator,112029,18,2,33,No
+1114,Female,37,Marketing,Marketing Analyst,84216,16,4,8,No
+1115,Male,55,Finance,Controller,156005,18,4,22,No
+1116,Male,26,Operations,Project Manager,91629,4,3,13,No
+1117,Female,32,Sales,Sales Manager,110618,5,3,21,No
+1118,Male,52,Sales,Account Manager,114859,18,3,33,No
+1119,Male,41,Marketing,SEO Specialist,72520,0,4,4,No
+1120,Male,56,HR,HR Manager,68698,8,4,40,No
+1121,Male,31,Sales,Sales Rep,90435,0,3,31,Yes
+1122,Female,55,Sales,Sales Rep,118319,15,3,41,No
+1123,Female,28,Finance,Financial Analyst,99569,0,4,40,Yes
+1124,Female,24,Finance,Accountant,120167,2,3,20,No
+1125,Male,35,Operations,Operations Analyst,71303,9,2,31,No
+1126,Female,41,IT,Software Engineer,85104,3,4,13,No
+1127,Male,26,Sales,Account Manager,97886,3,3,39,No
+1128,Female,42,HR,Payroll Specialist,63290,5,2,33,No
+1129,Female,44,Marketing,Marketing Analyst,74631,2,3,38,Yes
+1130,Female,56,Operations,Project Manager,62035,1,3,30,No
+1131,Male,37,Finance,Accountant,117120,12,3,28,No
+1132,Female,26,Marketing,SEO Specialist,62912,4,3,29,No
+1133,Male,22,Marketing,Brand Manager,70283,1,3,19,No
+1134,Female,32,Sales,Sales Rep,100372,0,1,24,Yes
+1135,Male,24,Finance,Accountant,103526,3,4,28,No
+1136,Female,58,Finance,Controller,110374,15,3,9,No
+1137,Male,52,IT,Software Engineer,122090,10,2,42,No
+1138,Male,25,Marketing,Content Strategist,86795,4,4,20,No
+1139,Male,23,Operations,Logistics Coordinator,78902,1,4,28,No
+1140,Female,28,Marketing,Marketing Analyst,110291,7,3,12,No
+1141,Male,49,IT,Software Engineer,121475,16,3,28,No
+1142,Male,26,Marketing,Content Strategist,98186,2,4,6,No
+1143,Female,40,HR,Recruiter,63510,8,3,22,Yes
+1144,Female,55,IT,Systems Admin,111781,3,4,33,No
+1145,Female,28,Operations,Logistics Coordinator,86258,5,3,41,No
+1146,Female,56,Operations,Logistics Coordinator,111346,18,2,4,Yes
+1147,Male,44,IT,DevOps Engineer,131014,16,4,28,No
+1148,Female,43,IT,DevOps Engineer,93747,9,4,7,No
+1149,Male,41,Finance,Financial Analyst,111911,9,2,24,No
+1150,Male,33,Sales,Business Dev,74892,3,1,6,No
+1151,Male,49,IT,Systems Admin,118095,14,3,30,No
+1152,Female,36,Marketing,Brand Manager,61447,3,4,8,No
+1153,Female,33,Sales,Sales Rep,106770,3,4,26,No
+1154,Male,38,Sales,Account Manager,105499,12,3,20,No
+1155,Male,53,Marketing,Content Strategist,106214,20,3,39,No
+1156,Female,50,Operations,Logistics Coordinator,93992,16,3,20,No
+1157,Male,40,IT,Data Analyst,121308,13,3,29,Yes
+1158,Female,36,Sales,Sales Rep,100189,1,3,42,Yes
+1159,Female,53,IT,Data Analyst,136187,16,3,20,No
+1160,Female,29,HR,HR Manager,78900,1,4,17,No
+1161,Male,31,Operations,Project Manager,85229,8,3,5,No
+1162,Male,34,Finance,Budget Analyst,141481,8,3,16,No
+1163,Male,58,HR,HR Manager,88651,12,1,39,No
+1164,Male,33,Operations,Ops Manager,82165,6,3,34,No
+1165,Female,34,Finance,Controller,116748,9,4,41,No
+1166,Female,32,IT,DevOps Engineer,90903,7,3,23,Yes
+1167,Male,25,Marketing,SEO Specialist,83066,3,3,28,No
+1168,Female,29,Operations,Ops Manager,73830,6,3,34,Yes
+1169,Male,25,Finance,Accountant,96269,3,3,24,No
+1170,Female,54,Marketing,Marketing Analyst,100288,8,4,7,No
+1171,Female,22,Operations,Ops Manager,96349,1,3,33,Yes
+1172,Female,32,IT,Software Engineer,121632,11,2,26,No
+1173,Female,37,IT,Software Engineer,98316,12,4,39,No
+1174,Female,22,Marketing,Content Strategist,81030,0,3,27,Yes
+1175,Female,39,IT,Data Analyst,104092,6,4,36,No
+1176,Male,48,IT,Systems Admin,90678,9,3,15,No
+1177,Male,29,HR,HR Generalist,81397,2,3,40,No
+1178,Female,22,Finance,Budget Analyst,107471,0,3,29,No
+1179,Female,23,Sales,Sales Manager,80004,2,4,11,No
+1180,Female,22,IT,Data Analyst,95045,1,2,17,Yes
+1181,Male,49,Operations,Project Manager,89542,3,3,31,No
+1182,Male,31,HR,HR Manager,96093,2,3,20,Yes
+1183,Female,23,Finance,Accountant,117693,2,4,9,No
+1184,Female,31,Finance,Accountant,127049,1,4,8,No
+1185,Female,44,Finance,Financial Analyst,112309,14,3,5,No
+1186,Male,48,Sales,Business Dev,97709,7,2,38,Yes
+1187,Male,42,IT,Systems Admin,93789,10,2,37,Yes
+1188,Female,52,IT,DevOps Engineer,112946,19,3,34,No
+1189,Female,26,Finance,Financial Analyst,104598,0,4,40,No
+1190,Female,23,Sales,Business Dev,86273,2,3,27,No
+1191,Female,35,Operations,Ops Manager,78041,4,2,23,No
+1192,Female,47,Operations,Project Manager,88507,4,3,24,No
+1193,Female,32,Marketing,Brand Manager,92177,8,2,6,Yes
+1194,Female,37,Marketing,Marketing Analyst,90656,12,3,8,Yes
+1195,Male,39,Finance,Controller,108761,8,3,23,No
+1196,Male,25,Sales,Business Dev,72230,2,3,34,Yes
+1197,Female,57,Finance,Financial Analyst,98508,2,3,39,No
+1198,Male,40,Marketing,Marketing Analyst,81394,5,4,5,No
+1199,Male,55,Sales,Sales Rep,92480,4,1,19,Yes
+1200,Male,43,IT,Software Engineer,121737,12,3,7,No
+1201,Female,37,Operations,Logistics Coordinator,73673,7,3,4,No
+1202,Male,52,Finance,Controller,150293,19,4,11,No
+1203,Male,34,HR,Payroll Specialist,86654,5,4,11,Yes
+1204,Male,43,Marketing,Brand Manager,108222,5,3,23,No
+1205,Male,32,Sales,Sales Rep,106196,3,3,26,No
+1206,Male,34,Marketing,SEO Specialist,84844,6,4,22,No
+1207,Female,56,Finance,Budget Analyst,140641,10,4,18,No
+1208,Female,25,Sales,Sales Manager,91857,3,1,12,No
+1209,Male,53,HR,HR Generalist,94179,16,4,20,No
+1210,Male,34,Operations,Ops Manager,93325,2,3,13,No
+1211,Male,57,IT,Systems Admin,104172,14,2,42,No
+1212,Female,55,Marketing,SEO Specialist,89821,18,2,8,No
+1213,Female,38,Operations,Project Manager,72114,11,4,13,No
+1214,Female,42,Marketing,Content Strategist,113327,14,2,29,No
+1215,Female,43,IT,Software Engineer,103444,7,2,22,Yes
+1216,Female,33,Sales,Business Dev,75836,1,2,28,Yes
+1217,Male,53,IT,Data Analyst,111453,2,4,37,No
+1218,Female,49,Finance,Controller,115245,11,2,37,No
+1219,Male,44,IT,DevOps Engineer,134531,9,4,22,No
+1220,Female,51,Operations,Operations Analyst,83596,10,2,10,No
+1221,Male,46,Operations,Project Manager,88317,3,4,38,No
+1222,Male,57,Finance,Controller,101997,6,2,37,No
+1223,Female,42,IT,DevOps Engineer,114046,1,3,13,No
+1224,Male,58,Operations,Logistics Coordinator,98212,5,4,9,No
+1225,Male,31,Sales,Business Dev,87181,3,3,22,No
+1226,Female,24,Finance,Accountant,97395,3,3,4,No
+1227,Female,34,Operations,Ops Manager,102100,6,2,10,Yes
+1228,Female,39,Sales,Sales Manager,102542,15,3,30,No
+1229,Male,25,Marketing,Brand Manager,107479,4,3,9,No
+1230,Male,35,Operations,Operations Analyst,106781,11,4,8,No
+1231,Female,56,Finance,Budget Analyst,117189,3,3,12,No
+1232,Male,45,IT,DevOps Engineer,121204,2,4,38,No
+1233,Male,50,HR,Payroll Specialist,68296,1,4,13,No
+1234,Male,48,IT,Software Engineer,97657,1,3,10,No
+1235,Male,26,Operations,Ops Manager,100061,5,2,16,Yes
+1236,Female,41,Marketing,SEO Specialist,75634,5,3,12,No
+1237,Male,35,Sales,Business Dev,82918,14,4,23,No
+1238,Male,36,Finance,Controller,109592,3,3,6,No
+1239,Male,50,Finance,Financial Analyst,94253,0,4,40,Yes
+1240,Male,47,HR,HR Generalist,67792,5,2,4,No
+1241,Male,26,Operations,Ops Manager,84087,3,3,16,No
+1242,Female,33,Operations,Ops Manager,103415,1,4,6,No
+1243,Female,58,Operations,Operations Analyst,81371,7,3,15,No
+1244,Male,40,Sales,Sales Rep,81126,3,4,32,No
+1245,Male,26,IT,Data Analyst,103911,5,3,40,No
+1246,Female,39,Marketing,Marketing Analyst,75869,4,4,41,No
+1247,Male,50,Operations,Ops Manager,76748,6,1,20,Yes
+1248,Male,38,Operations,Logistics Coordinator,114281,13,4,8,No
+1249,Male,27,Sales,Sales Manager,97899,6,3,6,No
+1250,Male,36,Sales,Sales Manager,107129,7,2,19,No
+1251,Male,25,Sales,Account Manager,85286,4,2,8,Yes
+1252,Female,22,Marketing,Brand Manager,64893,0,2,23,No
+1253,Female,54,HR,HR Generalist,91786,0,3,24,No
+1254,Female,40,Operations,Ops Manager,60458,2,4,17,No
+1255,Female,26,Marketing,Marketing Analyst,95336,0,3,7,No
+1256,Male,22,Marketing,Brand Manager,102106,1,4,30,No
+1257,Female,41,IT,Data Analyst,89685,6,4,13,Yes
+1258,Female,34,Operations,Logistics Coordinator,94652,3,2,37,No
+1259,Female,58,Marketing,SEO Specialist,112785,19,4,4,No
+1260,Female,47,Marketing,Marketing Analyst,107629,3,2,35,No
+1261,Female,41,Finance,Financial Analyst,106759,1,4,14,No
+1262,Female,46,HR,HR Generalist,105519,12,3,34,No
+1263,Female,40,Operations,Ops Manager,86791,0,3,25,No
+1264,Male,46,Marketing,Brand Manager,70346,8,3,24,No
+1265,Female,50,Marketing,Content Strategist,110730,8,2,11,No
+1266,Male,47,Finance,Controller,135372,13,3,27,No
+1267,Female,37,Marketing,Marketing Analyst,102730,4,2,42,No
+1268,Male,56,Marketing,Brand Manager,122188,17,4,40,Yes
+1269,Male,42,IT,Data Analyst,148505,18,3,31,No
+1270,Female,43,Finance,Financial Analyst,135233,2,3,31,No
+1271,Male,46,Marketing,Brand Manager,77333,8,2,38,Yes
+1272,Male,48,Operations,Ops Manager,104865,12,3,11,No
+1273,Female,37,Marketing,Marketing Analyst,99775,9,4,7,No
+1274,Male,46,HR,Recruiter,101912,17,3,39,No
+1275,Female,35,Operations,Operations Analyst,64740,2,2,4,No
+1276,Male,42,HR,HR Manager,94389,3,2,22,No
+1277,Male,55,Operations,Logistics Coordinator,95599,9,3,20,Yes
+1278,Male,50,Sales,Sales Rep,88343,9,3,10,No
+1279,Male,50,Marketing,Marketing Analyst,102146,10,3,14,No
+1280,Male,34,Operations,Logistics Coordinator,91142,13,2,24,Yes
+1281,Female,33,IT,DevOps Engineer,106629,2,2,37,Yes
+1282,Male,46,HR,HR Generalist,86508,12,3,17,No
+1283,Female,44,IT,Software Engineer,100849,18,3,36,No
+1284,Male,23,IT,Software Engineer,124333,1,4,32,Yes
+1285,Female,48,Sales,Business Dev,121559,20,3,13,No
+1286,Male,25,Sales,Business Dev,88721,0,3,40,Yes
+1287,Male,37,IT,Software Engineer,124537,7,4,27,No
+1288,Male,41,Sales,Business Dev,101331,18,3,18,No
+1289,Male,55,Operations,Operations Analyst,86399,15,3,26,Yes
+1290,Female,52,Marketing,SEO Specialist,66869,7,3,6,No
+1291,Female,46,Operations,Ops Manager,104399,16,4,20,No
+1292,Male,50,HR,HR Manager,111784,15,3,25,No
+1293,Female,58,Operations,Operations Analyst,77383,7,3,17,No
+1294,Male,25,Sales,Account Manager,68247,2,2,27,No
+1295,Male,39,Sales,Business Dev,108786,2,3,11,No
+1296,Male,41,Operations,Project Manager,83300,12,3,34,No
+1297,Male,28,Operations,Logistics Coordinator,67191,0,3,9,No
+1298,Male,42,Sales,Business Dev,77229,10,1,34,No
+1299,Female,38,HR,Recruiter,96213,3,3,38,No
+1300,Male,28,HR,Recruiter,69178,7,3,38,No

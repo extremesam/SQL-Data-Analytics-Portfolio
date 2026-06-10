@@ -1,61 +1,141 @@
 # Customer Churn Analysis — SQL Project
 
-## Objective
+## Overview
 
-Analyse churn patterns across 500 telecom customers to identify high-risk segments, quantify revenue at risk, and generate actionable retention recommendations using SQL.
+This project analyzes **500 telecom customers** to understand churn behavior, identify high-risk customer segments, and quantify key drivers of customer attrition using SQL.
+
+The objective is to translate raw customer data into **actionable retention insights that reduce revenue loss and improve customer lifetime value**.
+
+---
+
+## Business Objective
+
+Customer churn is one of the most critical challenges in subscription-based businesses.
+
+This project focuses on answering:
+
+* Who is likely to leave the service?
+* Why are customers churning?
+* Which customer segments are most at risk?
+* What strategies can reduce churn?
+
+---
+
+## Dataset Overview
+
+The dataset contains **500 customer records** with behavioral, financial, and subscription attributes:
+
+* Customer demographics (Age, Gender)
+* Subscription details (Contract Type, Internet Service, Payment Method)
+* Usage behavior (Tech Support, Online Backup, Number of Services)
+* Financial metrics (Monthly Charges, Total Charges)
+* Target variable: **Churn (Yes/No)**
+
+---
+
+## Key Business Metrics
+
+* Total Customers: **500**
+* Churned Customers: **172**
+* Overall Churn Rate: **34.4%**
+
+---
+
+## SQL Techniques Used
+
+This project demonstrates intermediate to advanced SQL techniques:
+
+* Aggregations (COUNT, SUM, AVG)
+* CASE statements for segmentation and risk scoring
+* GROUP BY with multiple dimensions
+* Subqueries for filtered analysis
+* Common Table Expressions (CTEs)
+* Window Functions:
+
+  * RANK() for customer ranking
+* Derived metrics (churn rate, revenue risk, segmentation logic)
+
+---
 
 ## Business Questions Answered
 
-| # | Question | SQL Concept |
-|---|----------|-------------|
-| 1 | Overall churn rate | CASE + Aggregation |
-| 2 | Churn by contract type | GROUP BY + CASE |
-| 3 | Churn by payment method | GROUP BY + CASE |
-| 4 | Churn by internet service | GROUP BY + AVG |
-| 5 | Identify high-risk customers | Subquery |
-| 6 | Risk segmentation labels | CASE statements |
-| 7 | Churn rate by monthly charge band | CTE + CASE |
-| 8 | Churn rate by tenure cohort | CTE + CASE |
-| 9 | Full risk profile summary | Chained CTEs |
-| 10 | Rank customers by charges within contract | Window Function — RANK() PARTITION BY |
-| 11 | Tech support vs churn impact | CASE + GROUP BY |
-| 12 | Annualised revenue at risk | CTE + derived calculation |
+| #  | Question                                                | SQL Techniques Used   |
+| -- | ------------------------------------------------------- | --------------------- |
+| 1  | What is the overall churn rate?                         | CASE + Aggregation    |
+| 2  | How does churn vary by contract type?                   | GROUP BY + CASE       |
+| 3  | What is the impact of payment method on churn?          | GROUP BY              |
+| 4  | How does internet service type affect churn?            | GROUP BY              |
+| 5  | Who are the high-risk customers?                        | Subqueries            |
+| 6  | How can customers be segmented by risk level?           | CASE statements       |
+| 7  | What is churn rate by monthly charge band?              | CTE + CASE            |
+| 8  | How does tenure affect churn behavior?                  | CTE + cohort analysis |
+| 9  | What does a full churn risk profile look like?          | Chained CTEs          |
+| 10 | Which customers are highest spenders per contract type? | Window Functions      |
+| 11 | How does tech support affect churn?                     | GROUP BY              |
+| 12 | What is the revenue at risk from churn?                 | Derived calculations  |
 
-## SQL Concepts Demonstrated
+---
 
-- `CASE` statements for conditional classification and aggregation
-- **Subqueries** for filtering based on derived conditions
-- **CTEs** (`WITH` clause) — single and chained
-- **Window Functions:** `RANK() OVER (PARTITION BY ... ORDER BY ...)`
-- `GROUP BY` with multiple metrics
-- Derived calculations (annualised revenue, churn rate percentages)
-- Multi-condition `WHERE` filtering
+## Key Findings
 
-## Files
+### 1. High Overall Churn
 
-| File | Description |
-|------|-------------|
-| `dataset.csv` | 500 customer records with churn labels |
-| `schema.sql` | Table definition |
-| `analysis.sql` | 12 business questions with full SQL queries |
-| `insights.md` | Business findings and retention recommendations |
+The churn rate is **34.4%**, meaning more than 1 in 3 customers are leaving the service.
 
-## Key Findings Summary
+---
 
-- Overall churn rate: **34.4%**
-- **Month-to-Month** contracts churn at **50%** vs just **15.2%** for Two Year
-- **Electronic Check** payment method has the highest churn (~48%)
-- Customers in their **first 12 months** are the most at risk
-- Customers **without tech support** churn at significantly higher rates
+### 2. Contract Type is the Strongest Driver
 
-## How to Run
+* Month-to-month customers have significantly higher churn rates (~50%)
+* Two-year contracts show the lowest churn (~15%)
 
-```sql
--- 1. Create the table
-SOURCE schema.sql;
+**Insight:** Contract commitment strongly influences retention.
 
--- 2. Import dataset.csv into the customers table
+---
 
--- 3. Run queries
-SOURCE analysis.sql;
-```
+### 3. Payment Method Matters
+
+Electronic Check users show the highest churn rates (~48%), indicating potential trust or convenience issues.
+
+---
+
+### 4. Early Lifecycle Risk
+
+Customers within their first 12 months are the most vulnerable to churn.
+
+**Insight:** Onboarding experience is a critical retention window.
+
+---
+
+### 5. Service Engagement Reduces Churn
+
+Customers without Tech Support or Online Backup services are significantly more likely to churn.
+
+**Insight:** Engagement and service adoption improve retention.
+
+---
+
+## Business Impact
+
+This analysis supports strategic decisions in:
+
+* Reducing early-stage customer churn
+* Promoting long-term contracts
+* Improving onboarding experience
+* Encouraging adoption of support services
+* Identifying and prioritizing high-risk customers
+
+---
+
+## Key Risks Identified
+
+* High dependency on month-to-month contracts
+* Weak early-stage customer retention
+* Low engagement among unsupported users
+* Payment method-related churn concentration
+
+---
+
+## Conclusion
+
+This project demonstrates how SQL can be used to analyze customer churn behavior and uncover actionable retention strategies. The findings highlight that churn is primarily driven by **contract structure, customer engagement, and early lifecycle experience rather than pricing alone**.

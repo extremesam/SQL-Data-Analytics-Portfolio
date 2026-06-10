@@ -1,63 +1,149 @@
 # Executive KPI Dashboard — SQL Project
 
-## Objective
+---
 
-Analyse 36 months of business performance data (2022–2024) to produce executive-level KPIs including year-over-year growth, profitability trends, customer metrics, and rolling averages — the kind of SQL that powers real board reporting.
+## 1. Project Overview
 
-## Business Questions Answered
+This project analyzes **36 months of business performance data (2022–2024)** to generate executive-level KPIs typically used in **board reporting, financial reviews, and strategic decision-making**.
 
-| # | Question | SQL Concept |
-|---|----------|-------------|
-| 1 | Annual executive summary | Aggregation + CASE |
-| 2 | Year-over-year revenue growth | CTE + LAG() |
-| 3 | Monthly revenue with MoM growth | CTE + LAG() + LEAD() |
-| 4 | Year-to-date running totals | Window — SUM() PARTITION BY YEAR |
-| 5 | Same-month comparison across 3 years | Pivoting with CASE |
-| 6 | Profitability trend + 3M rolling margin | CTE + Rolling AVG() |
-| 7 | Customer growth and monthly churn rate | LAG() + derived metrics |
-| 8 | Marketing efficiency and CPA | CTE + NULLIF + Window AVG |
-| 9 | Quarterly rollup | CASE quarters + GROUP BY |
-| 10 | Best and worst revenue months | Subquery + UNION ALL |
-| 11 | 3-month and 6-month rolling revenue avg | Window — ROWS BETWEEN |
-| 12 | Full executive scorecard | Chained CTEs + LAG() |
+The analysis focuses on:
 
-## SQL Concepts Demonstrated
+* Revenue and profitability trends
+* Customer acquisition and churn dynamics
+* Marketing efficiency
+* Time-based performance patterns (YoY, MoM, rolling trends)
 
-- **LAG()** — month-over-month and year-over-year comparisons
-- **LEAD()** — forward-looking next-month preview
-- **Running totals** — `SUM() OVER (PARTITION BY Year ORDER BY Month ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)`
-- **Rolling averages** — 3-month and 6-month windows
-- **Chained CTEs** — multi-step executive scorecard
-- **CASE** — quarterly bucketing, conditional pivoting
-- **UNION ALL** — combining best/worst month results
-- **NULLIF** — safe division to avoid divide-by-zero
-- **Pivoting** — same-month cross-year comparisons
+This represents a **full business intelligence dashboard built entirely in SQL**.
 
-## Files
+---
 
-| File | Description |
-|------|-------------|
-| `dataset.csv` | 36 months of monthly KPI data (2022–2024) |
-| `schema.sql` | Table definition |
-| `analysis.sql` | 12 executive business questions |
-| `insights.md` | Business findings and strategic recommendations |
+## 2. Business Objective
 
-## Key Findings Summary
+The goal of this project is to simulate real-world executive reporting by answering:
 
-- Revenue grew **+14.2% in 2023** and **+23.4% in 2024** — accelerating growth
-- Net profit margin held steady at **33–35%** across all three years
-- **Q4 is the strongest quarter** every year; **Q1 is consistently softest**
-- Marketing cost per acquisition improved year-on-year as scale increased
-- Every month in 2024 outperformed its 2023 equivalent on a same-month basis
+* Is the business growing sustainably?
+* Are profits scaling with revenue?
+* How efficient is customer acquisition?
+* What seasonal patterns affect performance?
+* Where are operational risks emerging?
 
-## How to Run
+---
+
+## 3. Dataset Overview
+
+* Time Period: **January 2022 – December 2024 (36 months)**
+* Granularity: Monthly KPI reporting
+* Domain: Subscription-based / SaaS-style business
+
+---
+
+## 4. Business Questions Answered
+
+| #  | Question                               | SQL Concepts Used                    |
+| -- | -------------------------------------- | ------------------------------------ |
+| 1  | Annual executive performance summary   | Aggregation + CASE                   |
+| 2  | Year-over-year revenue growth          | CTE + LAG()                          |
+| 3  | Month-over-month revenue trends        | CTE + LAG() / LEAD()                 |
+| 4  | Year-to-date running totals            | Window Functions (SUM OVER)          |
+| 5  | Same-month YoY comparison              | CASE-based pivoting                  |
+| 6  | Profitability trends + rolling margins | Rolling AVG (Window Functions)       |
+| 7  | Customer growth and churn dynamics     | LAG() + derived metrics              |
+| 8  | Marketing efficiency (CPA analysis)    | CTE + NULLIF + aggregation           |
+| 9  | Quarterly performance breakdown        | CASE + GROUP BY                      |
+| 10 | Best and worst performing months       | Subqueries + UNION ALL               |
+| 11 | Rolling 3-month & 6-month trends       | Window Functions (ROWS BETWEEN)      |
+| 12 | Executive KPI scorecard                | Chained CTEs + multi-metric analysis |
+
+---
+
+## 5. SQL Techniques Demonstrated
+
+This project demonstrates advanced SQL capabilities including:
+
+* **Window Functions**
+
+  * `LAG()` for trend analysis
+  * `LEAD()` for forward-looking insights
+  * `SUM() OVER()` for running totals
+  * Rolling averages using window frames
+
+* **Common Table Expressions (CTEs)**
+
+  * Multi-step KPI transformations
+  * Executive scorecard construction
+
+* **Time-Series Analysis**
+
+  * Month-over-month growth
+  * Year-over-year comparisons
+  * Seasonal decomposition
+
+* **Analytical SQL Patterns**
+
+  * CASE-based pivoting
+  * Safe division using NULLIF
+  * UNION ALL for comparative reporting
+
+---
+
+## 6. Key Insights Summary
+
+* Revenue increased consistently across all years:
+
+  * **+14.2% in 2023**
+  * **+23.4% in 2024 (accelerated growth)**
+
+* Net profit margins remained stable at **33–35%**, indicating strong operational efficiency
+
+* **Q4 consistently outperforms all other quarters**, confirming strong seasonal demand
+
+* **Q1 remains the weakest period each year**, showing predictable seasonal slowdown
+
+* Marketing efficiency improved overall but shows **high volatility in specific months**
+
+* Every month in 2024 outperformed its 2023 equivalent in same-month comparisons
+
+---
+
+## 7. Business Impact
+
+This analysis enables executive-level decision-making in:
+
+* Revenue forecasting and planning
+* Budget allocation across quarters
+* Marketing spend optimization
+* Performance benchmarking across years
+* Early identification of business slowdowns
+
+---
+
+## 8. Files in This Project
+
+| File           | Description                           |
+| -------------- | ------------------------------------- |
+| `dataset.csv`  | 36 months of KPI data (2022–2024)     |
+| `schema.sql`   | Table structure definition            |
+| `analysis.sql` | 12 executive-level SQL queries        |
+| `insights.md`  | Business insights and recommendations |
+
+---
+
+## 9. How to Run
 
 ```sql
--- 1. Create the table
+-- 1. Create table
 SOURCE schema.sql;
 
--- 2. Import dataset.csv into the kpi_monthly table
+-- 2. Load dataset into kpi_monthly table
 
--- 3. Run queries
+-- 3. Run analysis
 SOURCE analysis.sql;
 ```
+
+---
+
+## 10. Conclusion
+
+This project demonstrates how SQL can be used to move beyond basic reporting into **executive-level business intelligence**, combining financial, customer, and operational KPIs into a unified analytical framework.
+
+It reflects real-world analytics work used in **board reporting, SaaS performance tracking, and strategic decision support**.

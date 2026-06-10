@@ -1,63 +1,122 @@
-# Sales Analytics SQL Project
+# Sales Analytics SQL Project (2024)
 
-## Objective
+## Overview
 
-Analyse 970 sales transactions across a full calendar year (2024) to uncover revenue trends, top-performing products, regional gaps, profit margins, and customer segment behaviour using SQL.
+This project analyzes **970 sales transactions from 2024** to uncover key business insights across revenue performance, product contribution, regional sales distribution, customer segmentation, and seasonal trends.
+
+The goal is to transform raw transactional data into **actionable business intelligence for strategic decision-making**.
+
+---
+
+## Business Objective
+
+Organizations often struggle with understanding:
+
+* Which products drive the most revenue and profit
+* How sales vary across time (seasonality)
+* Which regions are underperforming
+* Which customer segments are most valuable
+* How revenue concentration impacts business risk
+
+This project uses SQL to answer these questions and support data-driven business strategy.
+
+---
+
+## Key Business Insights (Summary)
+
+* Total Revenue: **$430,658**
+
+* Total Profit: **$201,787**
+
+* Profit Margin: **46.9%**
+
+* **Laptop Pro** contributes ~45% of total revenue (key revenue driver)
+
+* **North region** is the strongest market, while **West** underperforms significantly
+
+* **SMB customers** generate the highest share of revenue
+
+* Sales show strong **seasonality**, with peak performance in November and weaker mid-year months (June–July)
+
+---
 
 ## Business Questions Answered
 
-| # | Question | SQL Concept |
-|---|----------|-------------|
-| 1 | Overall sales performance summary | Aggregation |
-| 2 | Monthly revenue trend | GROUP BY + DATE functions |
-| 3 | Top products by revenue and profit | GROUP BY + ORDER BY |
-| 4 | Best performing region | GROUP BY + AVG |
-| 5 | Profit margin by category | Derived calculations |
-| 6 | Customer segment comparison | GROUP BY + division |
-| 7 | Top product per region | Window Function — RANK() PARTITION BY |
-| 8 | Running total of monthly revenue | Window Function — SUM() ROWS UNBOUNDED |
-| 9 | Month-over-month revenue growth | Window Function — LAG() |
-| 10 | Top 15 customers by revenue | CTE + RANK() |
-| 11 | Categories above revenue threshold | HAVING |
+| #  | Question                   | SQL Techniques Used        |
+| -- | -------------------------- | -------------------------- |
+| 1  | Overall sales performance  | Aggregation                |
+| 2  | Monthly revenue trend      | Date functions + GROUP BY  |
+| 3  | Top products by revenue    | GROUP BY + ORDER BY        |
+| 4  | Regional performance       | GROUP BY + aggregation     |
+| 5  | Profit margin by category  | Derived calculations       |
+| 6  | Customer segment analysis  | GROUP BY                   |
+| 7  | Top product per region     | Window function (RANK)     |
+| 8  | Running total revenue      | Window function (SUM OVER) |
+| 9  | Month-over-month growth    | Window function (LAG)      |
+| 10 | Top customers              | CTE + ranking              |
+| 11 | Revenue threshold analysis | HAVING clause              |
 
-## SQL Concepts Demonstrated
+---
 
-- `GROUP BY` with multiple columns
-- `HAVING` for post-aggregation filtering
-- `DATE_FORMAT` / `STRFTIME` for time-series grouping
-- `CASE` statements for conditional logic
-- **CTEs** (`WITH` clause) for readable multi-step queries
-- **Window Functions:** `RANK()`, `LAG()`, `SUM() OVER()`, `PARTITION BY`
-- Running totals with `ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW`
-- Subqueries as derived tables
+## SQL Skills Demonstrated
 
-## Files
+* Aggregations (SUM, AVG, COUNT)
+* GROUP BY and HAVING filters
+* CASE statements for conditional logic
+* Date/time analysis for trend detection
+* Common Table Expressions (CTEs)
+* Window Functions:
 
-| File | Description |
-|------|-------------|
-| `dataset.csv` | 970 sales orders — full year 2024 |
-| `schema.sql` | Table definition |
-| `analysis.sql` | 11 business questions with full SQL queries |
-| `insights.md` | Business findings and recommendations |
+  * RANK()
+  * LAG()
+  * SUM() OVER (running totals)
+* Subqueries and derived tables
 
-## Key Findings Summary
+---
 
-- Total revenue: **$430,658** | Profit margin: **46.9%**
-- **Laptop Pro** accounts for ~45% of total revenue
-- **North** is the top region; **West** significantly underperforms
-- **Q4 (November)** is peak season; **Q3 (June–July)** is the weakest period
-- **Enterprise** customers generate the highest revenue per customer
+## Project Structure
 
-## How to Run
+| File         | Description                           |
+| ------------ | ------------------------------------- |
+| dataset.csv  | 970 sales transactions (2024)         |
+| schema.sql   | Table creation script                 |
+| analysis.sql | SQL queries for business questions    |
+| insights.md  | Business insights and recommendations |
 
-Load the dataset into any SQL environment (MySQL, PostgreSQL, SQLite, DBeaver, or DB Browser for SQLite):
+---
+
+## Business Impact
+
+This analysis supports strategic decision-making in the following areas:
+
+* **Product strategy:** Identify and scale high-performing products (e.g., Laptop Pro)
+* **Regional strategy:** Address underperformance in the West region
+* **Customer strategy:** Focus on high-value SMB and Enterprise customers
+* **Revenue planning:** Optimize for seasonal demand patterns
+* **Risk management:** Reduce dependency on a single product for revenue stability
+
+---
+
+## How to Run the Project
+
+### Step 1: Create table
 
 ```sql
--- 1. Create the table
 SOURCE schema.sql;
+```
 
--- 2. Import dataset.csv into the sales table
+### Step 2: Load dataset
 
--- 3. Run queries
+Import `dataset.csv` into the sales table using your SQL tool (PostgreSQL, MySQL, SQLite, or DBeaver).
+
+### Step 3: Run analysis
+
+```sql
 SOURCE analysis.sql;
 ```
+
+---
+
+## Conclusion
+
+This project demonstrates how SQL can be used to convert raw transactional data into **structured business intelligence insights**, enabling better decision-making across product, customer, regional, and time-based dimensions.
